@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS personalizado para formulario*/
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: #003c3c;
+}
+
+.logo {
+  max-height: 150px;
+}
+
+/* Color personalizado */
+.bg-verde {
+  background-color: #105652 ;
+}
+
+.bg-light{
+	background-color: white;
+}
+
+/* Enlaces blancos */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f9b443;
+  text-decoration: none;
+}
+
+/* Lupa buscador */
+.lupa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.imagenlupa {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+
+/* Formulario */
+.contenedor-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  max-width: 1200px;
+background-color: white;
+}
+
+.categoria {
+  background-color: white;  /* Asegura que el fondo sea blanco */
+  border: none !important;  /* Elimina cualquier borde */
+  box-shadow: none !important; /* Elimina cualquier sombra */
+}
+
+.categoria ul li a {
+  color: #0c5b56;
+  text-decoration: none;
+}
+
+.categoria ul li a:hover {
+  color: #f9b443;
+}
+
+/* Estilo formulario principal */
+.formulario-ramos {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-ramos h2 {
+  color: #105652;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario-ramos input[type="text"],
+.formulario-ramos input[type="email"],
+.formulario-ramos input[type="date"],
+.formulario-ramos input[type="file"],
+.formulario-ramos textarea {
+  padding: 10px;
+  border: 1px solid #105652;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formulario-ramos input[type="checkbox"],
+.formulario-ramos input[type="radio"] {
+  margin-right: 5px;
+}
+
+.formulario-ramos button {
+  align-self: center;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #105652;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario-ramos button:hover {
+  background-color: #f9b443;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #105652;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: white;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #f9b443;
+}
+
+/*lupa*/
+
+.lupa {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.lupa input {
+  width: 0px;
+  height: 25px;
+  padding: 0;
+  font-size: 10px;
+  color: white;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 20px;
+  transition: all 0.6s ease;
+  background-color: transparent;
+}
+
+.imagenlupa {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 8px; 
+}
+
+.lupa:hover input {
+  width: 150px;
+  padding: 0 20px;
+  background-color: white;
+  color: black;
+}
+
